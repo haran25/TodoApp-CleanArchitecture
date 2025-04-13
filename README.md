@@ -26,10 +26,10 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=haran25&show_icons=true&locale=en" alt="haran25" /></p>
 
-# 📝 ToDoApp - Clean Architecture .NET API
 
-A simple and clean To-do List Web API built with **ASP.NET Core**, following **Clean Architecture** principles.   
-Includes a basic optional **React frontend** for interacting with the API. 
+# 📝 To-do List Web API - Clean Architecture (.NET 5 + React)
+
+This is a clean and modular **To-do List Web API** built with **.NET 5**, following **Clean Architecture principles**. It includes full CRUD support, **Swagger UI**, **SQLite** for persistence, and **unit tests** for core logic. Optionally, a simple **React frontend** is included to interact with the API. 
 
 ---
 
