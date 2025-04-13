@@ -1,23 +1,23 @@
-<h1 align="center">Hi 👋, I'm HARIIHARAN S/O SIVAN KUPPUSAMY</h1>
-<h3 align="center">I Am A Passionate Frontend Developer and Software Tester</h3>
+<h1 align="center">Hi 👋, I'm HARIIHARAN S/O SIVAN KUPPUSAMY</h1> 
+<h3 align="center">I Am A Passionate Full Stack Developer and Software Tester</h3>  
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=haran25&label=Profile%20views&color=0e75b6&style=flat" alt="haran25" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=haran25" alt="haran25" /></a> </p>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=haran25" alt="haran25" /></a> </p> 
 
-- 🌱 I’m currently learning **Katalon**
+- 🌱 I’m currently learning **Katalon**   
 
-- 👯 I’m looking to collaborate on **Software Testing Projects**
+- 👯 I’m looking to collaborate on **Software Testing Projects**   
 
-- 🤝 I’m looking for help with **Software Testing**
+- 🤝 I’m looking for help with **Software Testing**  
 
-- 💬 Ask me about **Manual Testing and Automation Testing**
+- 💬 Ask me about **Manual Testing and Automation Testing** 
 
-- 📫 How to reach me **haran3219@gmail.com**
+- 📫 How to reach me **haran3219@gmail.com**   
 
-- ⚡ Fun fact **I Create Youtube Videos**
+- ⚡ Fun fact **I Create Youtube Videos** 
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with me:</h3> 
 <p align="left">
 </p>
 
@@ -28,21 +28,21 @@
 
 # 📝 ToDoApp - Clean Architecture .NET API
 
-A simple and clean To-do List Web API built with **ASP.NET Core**, following **Clean Architecture** principles.  
-Includes a basic optional **React frontend** for interacting with the API.
+A simple and clean To-do List Web API built with **ASP.NET Core**, following **Clean Architecture** principles.   
+Includes a basic optional **React frontend** for interacting with the API. 
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure 
 
-```bash
-ToDoApp/
-├── src/
-│   ├── ToDoApp.API/             # API layer (Controllers, Swagger, DI setup)
-│   ├── ToDoApp.Application/     # Application logic, DTOs, Interfaces
-│   ├── ToDoApp.Core/            # Domain entities and interfaces
-│   ├── ToDoApp.Infrastructure/  # EF Core, SQLite setup 
+```bash 
+ToDoApp/ 
+├── src/ 
+│   ├── ToDoApp.API/             # API layer (Controllers, Swagger, DI setup) 
+│   ├── ToDoApp.Application/     # Application logic, DTOs, Interfaces 
+│   ├── ToDoApp.Core/            # Domain entities and interfaces   
+│   ├── ToDoApp.Infrastructure/  # EF Core, SQLite setup  
 ├── tests/
-│   └── ToDoApp.Tests/           # Unit tests
-├── ToDoApp.sln                  # Solution file
-├── README.md                    # This file
+│   └── ToDoApp.Tests/           # Unit tests 
+├── ToDoApp.sln                  # Solution file 
+├── README.md                    # This file 
