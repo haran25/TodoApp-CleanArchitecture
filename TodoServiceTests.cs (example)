@@ -1,0 +1,28 @@
+using Xunit;
+using TodoApp.Application.Services;
+using TodoApp.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using TodoApp.Domain.Entities;
+
+public class TodoServiceTests
+{
+    private readonly TodoService _service;
+    private readonly AppDbContext _context;
+
+    public TodoServiceTests()
+    {
+        var options = new DbContextOptionsBuilder<AppDbContext>()
+            .UseInMemoryDatabase(databaseName: "TestDb").Options;
+        _context = new AppDbContext(options);
+        _service = new TodoService(_context);
+    }
+
+    [Fact]
+    public async Task Can_Add_Todo()
+    {
+        var todo = new TodoItem { Title = "Test Todo" };
+        var result = await _service.AddAsync(todo);
+        Assert.NotNull(result);
+        Assert.Equal("Test Todo", result.Title);
+    }
+}

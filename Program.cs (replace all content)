@@ -1,0 +1,33 @@
+using Microsoft.EntityFrameworkCore;
+using TodoApp.Application.Interfaces;
+using TodoApp.Application.Services;
+using TodoApp.Infrastructure.Data;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=todo.db"));
+
+builder.Services.AddScoped<ITodoService, TodoService>();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+app.MapGet("/api/todos", async (ITodoService service) => Results.Ok(await service.GetAllAsync()));
+app.MapGet("/api/todos/{id}", async (int id, ITodoService service) =>
+    await service.GetByIdAsync(id) is TodoItem todo ? Results.Ok(todo) : Results.NotFound());
+app.MapPost("/api/todos", async (TodoItem item, ITodoService service) => Results.Ok(await service.AddAsync(item)));
+app.MapPut("/api/todos", async (TodoItem item, ITodoService service) => { await service.UpdateAsync(item); return Results.NoContent(); });
+app.MapDelete("/api/todos/{id}", async (int id, ITodoService service) => { await service.DeleteAsync(id); return Results.NoContent(); });
+
+app.Run();
