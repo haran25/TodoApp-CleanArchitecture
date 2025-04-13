@@ -45,4 +45,27 @@ ToDoApp/
 ├── tests/
 │   └── ToDoApp.Tests/           # Unit tests 
 ├── ToDoApp.sln                  # Solution file 
-├── README.md                    # This file 
+├── README.md                    # This file
+
+
+
+---
+
+## 🔧 Technologies Used
+
+- ✅ .NET 5  Web API
+- ✅ Clean Architecture
+- ✅ Entity Framework Core + SQLite
+- ✅ Swagger 
+- ✅ xUnit for Unit Testing
+- ✅ (Optional) React + Vite for frontend
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/haran25/TodoApp-CleanArchitecture.git
+cd TodoApp-CleanArchitecture
