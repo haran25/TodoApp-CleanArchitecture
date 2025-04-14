@@ -66,6 +66,5 @@ ToDoApp/
 
 ### 1. Clone the Repo
 
-```bash
 git clone https://github.com/haran25/TodoApp-CleanArchitecture.git
 cd TodoApp-CleanArchitecture
